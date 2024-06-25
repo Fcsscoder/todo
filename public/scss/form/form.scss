@@ -1,0 +1,154 @@
+@use '../mixins.scss' as m;
+@use '../variables.scss' as v;
+
+.todo-container {
+    width: 450px;
+    background-color: #1f1f1f;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+    header {
+        text-align: center;
+        padding: 0 1rem 1rem;
+        border-bottom: 1px #ccc solid;
+
+        h1 {
+            color: v.$white-color;
+            font-family: "Workbench", sans-serif;
+            letter-spacing: 8px;
+        }
+    }
+
+    #todo-form {
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+    
+        p {
+            margin-bottom: 0.8rem;
+            font-weight: bold;
+            color: v.$white-color;
+        }
+    
+        i {
+            font-style: normal;
+        }
+    }
+    
+    #edit-form {
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+    
+        p {
+            margin-bottom: 0.8rem;
+            font-weight: bold;
+            color: v.$white-color;
+        }
+    
+        #cancel-edit-btn {
+            margin-top: 1rem;
+            border-radius: 3px;
+        }
+    }
+    
+    .form-control {
+        display: flex;
+        flex-direction: row;
+    
+        input {
+            margin-right: 0.3rem;
+        }
+    }
+    
+    #toolbar {
+        padding: 1rem;
+        display: flex;
+    
+        h4 {
+            margin-bottom: .5rem;
+            color: v.$white-color;
+        }
+    
+        #search {
+            width: 65%;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            border-right: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+    
+            button {
+                border-radius: 3px;
+            }
+    
+            form {
+                display: flex;
+                margin-top: 0.5rem;
+            }
+    
+            input {
+                width: 100%;
+                margin-right: 0.3rem;
+            }
+        }
+    
+        #filter {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+    
+            select {
+                width: 100%;
+                margin-top: 0.6rem;
+            }
+        }
+    }
+    
+    .todo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 1rem;
+        border-bottom: 1px solid #ddd;
+        transition: 0.3s;
+      }
+      
+      .todo h3 {
+        flex: 1;
+        font-size: 0.9rem;
+        color: v.$white-color;
+      }
+      
+      .todo button {
+        margin-left: 0.4rem;
+      }
+      
+      .done {
+        background: rgba(240, 46, 170, 0.4);
+      }
+      
+      .done h3 {
+        color: v.$white-color;
+        text-decoration: line-through;
+        font-style: italic;
+      }
+    
+      input, select {
+        padding: 0.25rem 0.5rem;
+        border: none;
+    }
+}
+
+button {
+    @include m.button;
+    z-index: 2
+}
+
+i {
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+

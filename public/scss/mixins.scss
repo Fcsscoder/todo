@@ -1,0 +1,28 @@
+@use './variables.scss' as v;
+
+@mixin button {
+    background-color: transparent;
+    color: v.$white-color;
+    border: 2px solid v.$white-color;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+    i {
+        color: v.$white-color;
+    }
+
+    &:hover {
+        background-color: v.$white-color;
+        color: #1f1f1f;
+      }
+      
+    &:hover > i {
+        color: #1f1f1f;
+    }
+}
+
