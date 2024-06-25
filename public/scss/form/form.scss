@@ -11,7 +11,7 @@
     header {
         text-align: center;
         padding: 0 1rem 1rem;
-        border-bottom: 1px #ccc solid;
+        border-bottom: 1px #6c6c6c solid;
 
         h1 {
             color: v.$white-color;
@@ -22,7 +22,7 @@
 
     #todo-form {
         padding: 1rem;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #6c6c6c;
     
         p {
             margin-bottom: 0.8rem;
@@ -37,7 +37,7 @@
     
     #edit-form {
         padding: 1rem;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #6c6c6c;
     
         p {
             margin-bottom: 0.8rem;
@@ -73,7 +73,7 @@
             width: 65%;
             padding-right: 1rem;
             margin-right: 1rem;
-            border-right: 1px solid #ddd;
+            border-right: 1px solid #6c6c6c;
             display: flex;
             flex-direction: column;
     
@@ -109,7 +109,7 @@
         justify-content: space-around;
         align-items: center;
         padding: 1rem 1rem;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #6c6c6c;
         transition: 0.3s;
       }
       
@@ -121,6 +121,7 @@
       
       .todo button {
         margin-left: 0.4rem;
+        border: 2px solid #6c6c6c;;
       }
       
       .done {
@@ -152,3 +153,12 @@ i {
     display: none;
 }
 
+input {
+    border: 0;
+    border-radius: 2px;
+    background-color: #313131;
+}
+
+input::placeholder {
+    color: #9b9b9b;
+}

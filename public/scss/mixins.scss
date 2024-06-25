@@ -17,12 +17,12 @@
     }
 
     &:hover {
-        background-color: v.$white-color;
-        color: #1f1f1f;
+        background-color: #6c6c6c;
+        color: v.$white-color;
       }
       
     &:hover > i {
-        color: #1f1f1f;
+        color: v.$white-color;
     }
 }
 
