@@ -78,9 +78,9 @@ const getSearchedTodos = (search) => {
 
     todo.style.display = "flex";
 
-    console.log(todoTitle);
+    const lowerCaseSearch = search.toLowerCase()
 
-    if (!todoTitle.includes(search)) {
+    if (!todoTitle.includes(lowerCaseSearch)) {
       todo.style.display = "none";
     }
   });
