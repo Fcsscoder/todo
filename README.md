@@ -14,4 +14,4 @@
   Interface responsiva e dinâmica para uma experiência fluida e intuitiva.
 </p>
 
-https://github.com/user-attachments/assets/909874e2-1781-4d5d-9b04-49ff6d9ed448
+https://github.com/user-attachments/assets/94c1ded5-4447-431a-bff2-52e8201b1489
